@@ -1,0 +1,160 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+ .clear{
+   clear: both;
+ }
+ nav{
+   height: 4em;
+   line-height: 6.9em;
+   padding: 0 9.46em;
+ }
+ body{
+   font-size: 1.2em;
+   font-family: 'Indie Flower',sans-serif;
+ }
+ #menu-fixe{
+   height: 6em;
+   background:url("fond3.png");
+ }
+ #menu{
+   float:right;
+ }
+ #menu li{
+   list-style: none;
+   color:#656565;
+   float: left;
+   margin-left:2.66em;
+   height: 6.9em;
+   border-radius: 9px;
+ }
+.menu-cache{
+  display:none;
+}
+.menu-cache i:hover{
+  border-radius: 9px;
+  transition: all 1s;
+  background-color:#656565;
+  color:white;
+  box-shadow: 0 0 9px;
+}
+ #menu li a{
+ border-radius: 9px;
+ color:#2B3F48;
+ text-decoration: none;
+ transition: all 1s;
+ font-size: 1.3em;
+ }
+#menu li:hover >a{
+  border-radius: 9px;
+  color:white;
+  background-color: #2B3F48;
+  box-shadow: 0 0 9px;
+}
+
+ #accueil{
+   float: left;
+   font-size:2.5em;
+   color:#2B3F48;
+   font-weight: bold;
+ }
+.largeur{
+  padding:0 9em;
+}
+.fond3, .fond2, .fond1{
+  max-width: 100%;
+}
+
+.fond1, .fond3{
+  background-color: #B6EE96;
+}
+#article1, #article3{
+  padding: 7em 0;
+  text-align: center;
+  color:#2B3F48;
+}
+#article2 {
+  padding: 7em 0;
+  color:#656565;
+  text-align: center;
+}
+#article1 img{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin: 0 1.5em 0.2em 0;
+  box-shadow: 0 0 1.2em;
+  transition: all 1s;
+}
+
+#article1 h1, #article3 h1, #article2 h1{
+  font-size: 3.66em;
+}
+#article2 h2, #article3 h2{
+  margin-top: 1.2em;
+}
+section a{
+  color:white;
+}
+button{
+  margin-top:4.6em;
+  width: 14.6em;
+  height: 3.6em;
+  border-radius: 0.5em;
+  border:0;
+  font-weight:lighter;
+  font-size: 1.02em;
+}
+button a {
+  text-decoration: none;
+}
+#bouton1{
+  background: #2b3f48;
+  color:white;
+}
+#bouton2{
+  background: #B6EE96;
+  color:white
+}
+#bouton3{
+  background: white;
+  color:#27ae61;
+}
+.icones{
+  display: inline-block;
+  width: 30%;
+}
+.icones i{
+  font-size:2em;
+  margin-top:0.5em;
+}
+footer{
+  line-height: 13.8em;
+  height: 13.8em;
+  text-align: center;
+  color: #656565;
+}
+footer a{
+  text-decoration: none;
+  color:#2B3F48;
+}
+@media (max-width: 1000px){
+    #menu {
+      display:none;
+    }
+    .menu-cache{
+      display:block;
+      float: right;
+      font-size:2em;
+      color:#656565;
+    }
+    #article1 img{
+      display: none;
+    }
+    footer span{
+      font-size:1.8em;
+    }
