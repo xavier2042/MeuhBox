@@ -10,15 +10,15 @@
  }
  nav{
    height: 4em;
-   line-height: 6.9em;
-   padding: 0 9.46em;
+   line-height: 4em;
+   padding: 0 7.46em;
  }
  body{
-   font-size: 1.2em;
+   font-size: 1.4em;
    font-family: 'Indie Flower',sans-serif;
  }
  #menu-fixe{
-   height: 6em;
+   height: 5em;
    background:url("fond3.png");
  }
  #menu{
@@ -28,8 +28,7 @@
    list-style: none;
    color:#656565;
    float: left;
-   margin-left:2.66em;
-   height: 6.9em;
+   margin-left:2em;
    border-radius: 9px;
  }
 .menu-cache{
@@ -68,27 +67,35 @@
 .fond3, .fond2, .fond1{
   max-width: 100%;
 }
-
 .fond1, .fond3{
   background-color: #B6EE96;
 }
 #article1, #article3{
-  padding: 7em 0;
+  padding: 6em 0;
   text-align: center;
   color:#2B3F48;
 }
 #article2 {
-  padding: 7em 0;
+  padding: 6em 0;
   color:#656565;
   text-align: center;
 }
 #article1 img{
+  display: inline-block;
+  opacity:0.7;
   height: 120px;
   width: 120px;
   border-radius: 50%;
   margin: 0 1.5em 0.2em 0;
   box-shadow: 0 0 1.2em;
   transition: all 1s;
+}
+#article1 img:hover{
+  transform: rotate(360deg);
+  opacity:1;
+  box-shadow: 0 0 1.2em;
+}
+.cochon, .coq, .vache, .chevre, .mouton{
 }
 
 #article1 h1, #article3 h1, #article2 h1{
@@ -108,21 +115,33 @@ button{
   border:0;
   font-weight:lighter;
   font-size: 1.02em;
+  transition: all 1s;
 }
 button a {
   text-decoration: none;
+  transition: all 1s;
+
 }
 #bouton1{
   background: #2b3f48;
   color:white;
 }
+#bouton1:hover, #bouton2:hover{
+  background: white;
+  box-shadow: 0 0 10px #2b3f48;
+}
+#bouton1:hover >a, #bouton2:hover >a{
+  color:#2b3f48;
+}
 #bouton2{
   background: #B6EE96;
-  color:white
+  color:white;
 }
-#bouton3{
-  background: white;
-  color:#27ae61;
+
+.video iframe{
+  border-radius: 10px;
+  transition: all 1s;
+  box-shadow: 0 0 25px #2b3f48;
 }
 .icones{
   display: inline-block;
@@ -133,6 +152,7 @@ button a {
   margin-top:0.5em;
 }
 footer{
+  font-size: 0.8em;
   line-height: 13.8em;
   height: 13.8em;
   text-align: center;
